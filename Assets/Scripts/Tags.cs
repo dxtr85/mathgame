@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class One : MonoBehaviour {
+public class Tags : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -10,5 +10,6 @@ public class One : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+	
 	}
 }

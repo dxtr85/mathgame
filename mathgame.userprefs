@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MouseController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ShootingController.cs">
     <Files>
-      <File FileName="Assets\Scripts\MouseController.cs" Line="81" Column="46" />
+      <File FileName="Assets\Scripts\ShootingController.cs" Line="12" Column="16" />
+      <File FileName="Assets\Scripts\PlayerMovement.cs" Line="24" Column="46" />
+      <File FileName="Assets\Scripts\GameController\HashIDs.cs" Line="10" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
