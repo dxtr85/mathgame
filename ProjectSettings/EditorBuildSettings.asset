@@ -4,4 +4,88 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/MITOsoft.unity
+  - enabled: 1
+    path: Assets/Level_1.unity
+  - enabled: 1
+    path: Assets/Level_2.unity
+  - enabled: 1
+    path: Assets/Level_3.unity
+  - enabled: 1
+    path: Assets/Level_4.unity
+  - enabled: 1
+    path: Assets/Level_5.unity
+  - enabled: 1
+    path: Assets/Level_6.unity
+  - enabled: 1
+    path: Assets/Level_7.unity
+  - enabled: 1
+    path: Assets/Level_8.unity
+  - enabled: 1
+    path: Assets/Level_10.unity
+  - enabled: 1
+    path: Assets/Level_9.unity
+  - enabled: 1
+    path: Assets/Level_11.unity
+  - enabled: 1
+    path: Assets/Level_12.unity
+  - enabled: 1
+    path: Assets/Level_13.unity
+  - enabled: 1
+    path: Assets/Level_14.unity
+  - enabled: 1
+    path: Assets/Level_15.unity
+  - enabled: 1
+    path: Assets/Level_16.unity
+  - enabled: 1
+    path: Assets/Level_17.unity
+  - enabled: 1
+    path: Assets/Level_18.unity
+  - enabled: 1
+    path: Assets/Level_19.unity
+  - enabled: 1
+    path: Assets/Level_20.unity
+  - enabled: 1
+    path: Assets/Level_21.unity
+  - enabled: 1
+    path: Assets/Level_22.unity
+  - enabled: 1
+    path: Assets/Level_23.unity
+  - enabled: 1
+    path: Assets/TutorialScene.unity
+  - enabled: 1
+    path: Assets/PlayerSelect.unity
+  - enabled: 1
+    path: Assets/MenuAreYouSure.unity
+  - enabled: 1
+    path: Assets/SelectLevel1.unity
+  - enabled: 1
+    path: Assets/SelectLevel2.unity
+  - enabled: 1
+    path: Assets/SelectLevel3.unity
+  - enabled: 1
+    path: Assets/SelectLevel4.unity
+  - enabled: 1
+    path: Assets/SelectLevel5.unity
+  - enabled: 1
+    path: Assets/SelectLevel6.unity
+  - enabled: 1
+    path: Assets/Help1.unity
+  - enabled: 1
+    path: Assets/Help2.unity
+  - enabled: 1
+    path: Assets/Help3.unity
+  - enabled: 1
+    path: Assets/Help4.unity
+  - enabled: 1
+    path: Assets/HelpTouchpad.unity
+  - enabled: 1
+    path: Assets/HelpMouse.unity
+  - enabled: 1
+    path: Assets/MainMenu.unity
+  - enabled: 1
+    path: Assets/MathManIntro.unity
+  - enabled: 1
+    path: Assets/Level_Repeat.unity
