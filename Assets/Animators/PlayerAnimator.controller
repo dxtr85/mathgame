@@ -26,6 +26,18 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 1
     m_Controller: {fileID: 9100000}
+  - m_Name: isSad
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: isHappy
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 3
     m_Name: Base Layer
@@ -38,6 +50,19 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+--- !u!206 &20600000
+BlendTree:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Blend Tree
+  m_Childs: []
+  m_BlendParameter: Speed
+  m_BlendParameterY: Speed
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 1
+  m_BlendType: 0
 --- !u!206 &20610765
 BlendTree:
   m_ObjectHideFlags: 3
@@ -90,6 +115,42 @@ Transition:
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
+--- !u!1101 &110102747
+Transition:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110233849}
+  m_DstState: {fileID: 110210765}
+  m_TransitionDuration: .166666672
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 5
+    m_ConditionEvent: isSad
+    m_EventTreshold: 0
+    m_ExitTime: .833333313
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+--- !u!1101 &110133991
+Transition:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 0}
+  m_DstState: {fileID: 110233849}
+  m_TransitionDuration: .100000001
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isSad
+    m_EventTreshold: 0
+    m_ExitTime: .899999976
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
 --- !u!1101 &110135960
 Transition:
   m_ObjectHideFlags: 3
@@ -105,6 +166,24 @@ Transition:
     m_ConditionEvent: Speed
     m_EventTreshold: .100000001
     m_ExitTime: .785714269
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+--- !u!1101 &110155415
+Transition:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 0}
+  m_DstState: {fileID: 110264316}
+  m_TransitionDuration: .100000001
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: isHappy
+    m_EventTreshold: 0
+    m_ExitTime: .899999976
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
@@ -138,9 +217,27 @@ Transition:
   m_TransitionOffset: 0
   m_Conditions:
   - m_ConditionMode: 5
-    m_ConditionEvent: 
+    m_ConditionEvent: isSad
     m_EventTreshold: 0
     m_ExitTime: .666666687
+  m_Atomic: 1
+  m_Solo: 0
+  m_Mute: 0
+--- !u!1101 &110189428
+Transition:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_SrcState: {fileID: 110264316}
+  m_DstState: {fileID: 110210765}
+  m_TransitionDuration: .166666672
+  m_TransitionOffset: 0
+  m_Conditions:
+  - m_ConditionMode: 5
+    m_ConditionEvent: 
+    m_EventTreshold: 0
+    m_ExitTime: .833333313
   m_Atomic: 1
   m_Solo: 0
   m_Mute: 0
@@ -191,7 +288,7 @@ State:
   m_Motions:
   - {fileID: 7400016, guid: 42aae01017bae5b41b62e7557cb090fc, type: 3}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: -132, y: -72, z: 0}
+  m_Position: {x: 36, y: -132, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -221,7 +318,22 @@ State:
   m_Motions:
   - {fileID: 7400018, guid: 42aae01017bae5b41b62e7557cb090fc, type: 3}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: 360, y: -72, z: 0}
+  m_Position: {x: 192, y: -72, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110233849
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Player_Sad
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400012, guid: 42aae01017bae5b41b62e7557cb090fc, type: 3}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: -192, y: -24, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -236,7 +348,7 @@ State:
   m_Motions:
   - {fileID: 7400014, guid: 42aae01017bae5b41b62e7557cb090fc, type: 3}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: -336, y: 24, z: 0}
+  m_Position: {x: -156, y: -84, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -251,7 +363,22 @@ State:
   m_Motions:
   - {fileID: 7400032, guid: 42aae01017bae5b41b62e7557cb090fc, type: 3}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: 120, y: -72, z: 0}
+  m_Position: {x: 144, y: -192, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1102 &110264316
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Player_Happy
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400004, guid: 42aae01017bae5b41b62e7557cb090fc, type: 3}
+  m_ParentStateMachine: {fileID: 110700000}
+  m_Position: {x: -252, y: 36, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -269,17 +396,25 @@ StateMachine:
   - {fileID: 110223217}
   - {fileID: 110255109}
   - {fileID: 110237139}
+  - {fileID: 110233849}
+  - {fileID: 110264316}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110237139}
+      first: {fileID: 110264316}
       second:
-      - {fileID: 110188210}
+      - {fileID: 110189428}
+    data:
+      first: {fileID: 110233849}
+      second:
+      - {fileID: 110102747}
     data:
       first: {fileID: 0}
       second:
       - {fileID: 110192786}
+      - {fileID: 110133991}
+      - {fileID: 110155415}
     data:
       first: {fileID: 110210765}
       second:
@@ -296,6 +431,10 @@ StateMachine:
       first: {fileID: 110255109}
       second:
       - {fileID: 110192365}
+    data:
+      first: {fileID: 110237139}
+      second:
+      - {fileID: 110188210}
   m_MotionSetCount: 1
-  m_AnyStatePosition: {x: -552, y: -60, z: 0}
+  m_AnyStatePosition: {x: -372, y: -120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

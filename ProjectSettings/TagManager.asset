@@ -3,6 +3,13 @@
 --- !u!78 &1
 TagManager:
   tags:
+  - Digit
+  - Bullet
+  - GUIText
+  - SpawnPiont
+  - TutorialItem
+  - TutorialAction
+  - GUITextInfo
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
